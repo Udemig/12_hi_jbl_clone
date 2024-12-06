@@ -4,6 +4,11 @@
 // * Scss Imports
 @import "./variables";
 @import "./header";
+@import "./home";
+@import "./responsive";
+@import "./aboutUs";
+@import "./favorites";
+@import "./model";
 
 // * Css Reset
 
@@ -35,4 +40,53 @@ h4 {
 .container {
   max-width: 1120px;
   margin-inline: 24px;
+}
+
+.section {
+  padding-block: 80px 16px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  background: $gradient-color;
+  padding: 20px 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  font-weight: $font-semi-bold;
+  font-size: 15px;
+
+  i {
+    color: $first-color;
+    font-size: 32px;
+  }
+  &:hover {
+    box-shadow: 0 12px 32px #271208;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.button-container {
+  display: grid;
+  place-items: center;
+  margin-top: 35px;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 50px;
 }

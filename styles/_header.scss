@@ -1,5 +1,4 @@
 @import "./variables";
-@import "./mixin";
 
 header {
   width: 100%;
@@ -20,20 +19,13 @@ header {
       color: $first-color;
       font-size: $h2-font-size;
       font-weight: $font-semi-bold;
-      @include phone {
-        font-size: 60px;
-      }
     }
     // list
     &-list {
       display: flex;
-      column-gap: 50px;
+      column-gap: 55px;
     }
-    &-menu {
-      @include phone {
-        display: none;
-      }
-    }
+
     &-link {
       color: $white-color;
       font-weight: $font-medium;
