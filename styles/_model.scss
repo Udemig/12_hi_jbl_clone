@@ -1,3 +1,4 @@
+@import "./variables";
 .model {
   &-container {
     padding-top: 32px;
@@ -11,6 +12,17 @@
   }
   &-tooltip {
     position: absolute;
+    &-text {
+      background: $gradient-color;
+      padding: 6px 12px;
+      border-radius: 64px;
+      color: white;
+      font-size: $small-font-size;
+      font-weight: $font-medium;
+      position: absolute;
+      white-space: nowrap;
+      transform: translate(60px, -50px);
+    }
     &-1 {
       top: 88px;
       left: 80px;

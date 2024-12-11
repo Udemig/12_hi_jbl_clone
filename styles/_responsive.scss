@@ -18,6 +18,9 @@
       margin-left: 20px;
     }
   }
+  .sponsor-container {
+    grid-template-columns: repeat(4, max-content) !important;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -58,8 +61,23 @@
   }
   .model {
     &-img {
-      width: 700px !important;
+      width: 600px !important;
     }
+  }
+  .model-tooltip-text {
+    font-size: $normal-font-size !important;
+  }
+  .model-tooltip-3 {
+    left: 400px !important;
+    bottom: 150px !important;
+  }
+  .model-tooltip-1 {
+    left: 13.5rem !important;
+    top: 150px !important;
+  }
+  .model-tooltip-4 {
+    left: 120px !important;
+    bottom: 100px !important;
   }
 }
 @media (max-width: 768px) {
